@@ -1,0 +1,219 @@
+:root {
+    --primary-gold: #FFD700;
+    --primary-gold-hover: #FFC700;
+    --dark-bg: #121212;
+    --card-bg: #1E1E1E;
+    --text-main: #2b2b2b;
+    --text-muted: #6c757d;
+    --transition-smooth: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: var(--text-main);
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/*Navigation*/
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(194, 190, 190, 0.92) !important;
+    transition: var(--transition-smooth);
+}
+.navbar-brand img {
+    border:1px solid var(--primary-gold);
+    object-fit: cover;
+}
+.navbar-brand span {
+    letter-spacing: 1px;
+    color: var(--primary-gold);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--primary-gold) !important;
+}
+
+/*Hero Section*/
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
+}
+.hero-content h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.btn-warning {
+    background-color: var(--primary-gold);
+    border-color: var(--primary-gold);
+    color: #121212;
+    transition: var(--transition-smooth);
+}
+.btn-warning:hover {
+    background-color: var(--primary-gold-hover);
+    border-color: var(--primary-gold-hover);
+    color: #121212;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Cards */
+
+.menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#menu .card {
+    border-radius:12px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+#menu .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    transition: var(--transition-smooth);
+}
+
+#menu .card:hover {
+    transform:translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-img-top {
+    transition: var(--transition-smooth);
+}
+
+#menu .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #1a1a1a;
+    font-size: 1.25rem;
+}
+
+.btn-outline-primary {
+    color: var(--primary-gold);
+    border-color: var(--primary-gold);
+    transition: var(--transition-smooth);
+}
+.btn-outline-primary:hover {
+    color: #121212;
+    background-color: var(--primary-gold);
+    border-color: var(--primary-gold);
+}
+
+/*About Section*/
+
+#about img {
+    border-radius: 12px;
+    transition: var(--transition-smooth);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+#about h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-gold);
+}
+
+/* Contact Section */
+
+#contact .card {
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);   
+}
+
+.btn-primary {
+    background-color: #121212;
+    border-color: #121212;
+    transition: var(--transition-smooth);
+}
+.btn-primary:hover {
+    background-color: var(--primary-gold);
+    border-color: var(--primary-gold);
+    color: #121212;
+}
+
+/* Footer Section */
+footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--transition-smooth);
+}
+
+footer a:hover {
+    background-color: var(--primary-gold);
+    color: #121212 !important;
+    transform: translateY(-3px);
+}
+
+/*Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section{
+        min-height: 50vh !important;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem 0;
+    }
+}

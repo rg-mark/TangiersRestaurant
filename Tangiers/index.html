@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangiers Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Custom CSS (MUST come AFTER Bootstrap) -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Header / Navbar Section-->
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="tangiers.jpg" alt="Tangiers Restaurant Logo" height="40" class="me-2 rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--Hero Section-->
+<hero>
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center justify-content-center" style = "background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Lobster-Thermidor.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4">Welcome to Tangiers Restaurant</h1>
+                <p class="lead">Discover the exquisite flavors of our signature dishes, crafted with passion and served with elegance.</p>
+                <button class="btn btn-primary btn-lg mt-3">View Menu</button>
+            </div>
+        </div>
+    </section>
+</hero>
+
+<!--Menu Section-->
+<section id="menu" class="py-5 bg-light">
+    <div class="container">
+    <h2 class="fw-bold display-5">Our Specialties</h2>
+    <p class="text-muted col-lg-8 mx-auto">Experience the finest cuisine with our expertly crafted dishes, featuring fresh ingredients and exquisite flavors.</p>
+    </div>
+
+    <div class="row g-4">
+        <!--Item 1-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="Lobster-Thermidor.jpg" class="card-img-top" alt="Lobster Thermidor">
+                <div class="card-body">
+                    <h5 class="card-title">Lobster Thermidor</h5>
+                    <p class="card-text">A decadent dish featuring tender lobster meat in a creamy sauce, baked to perfection.</p>
+                    <p class="card-text">Price: $120.00</p>
+                </div>
+            </div>
+        </div>
+        <!--Item 2-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="sakana-1768933161.jpg" class="card-img-top" alt="All-You-Can-Eat Buffet Platter">
+                <div class="card-body">
+                    <h5 class="card-title">All-You-Can-Eat Buffet Platter</h5>
+                    <p class="card-text">A mountain of prime rib, crab legs, fried chicken, and mac and cheese all piled into a single plate.</p>
+                    <p class="card-text">Price: $200.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Item 3-->   
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="tableside-caesar-salad.jpg" class="card-img-top" alt="Tableside Caesar Salad">
+                <div class="card-body">
+                    <h5 class="card-title">Tableside Caesar Salad</h5>
+                    <p class="card-text">Crisp romaine lettuce tossed with our signature Caesar dressing, freshly grated Parmesan, and crunchy croutons, prepared right at your table.</p>
+                    <p class="card-text">Price: $75.00</p>
+                </div>
+            </div>
+        </div>
+        <!--Item 4-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="steak-eggs.jpg" class="card-img-top" alt="The Late-Night Steak and Eggs">
+                <div class="card-body">
+                    <h5 class="card-title">The Late-Night Steak and Eggs</h5>
+                    <p class="card-text">A hearty combination of a perfectly cooked steak and eggs, ideal for a satisfying late-night meal.</p>
+                    <p class="card-text">Price: $50.00</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Close row -->   
+</section>
+
+
+    <!--About Us Section-->
+    <section id="about" class="py-5">
+        <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <img src="inside.jpg" alt="Inside Tangiers Restaurant">
+                <p>Founded in 1995, Tangiers Restaurant has been serving exquisite cuisine with a focus on fresh ingredients and exceptional flavors. Our mission is to complement your gambling experience with exceptional dining.
+                   <em>Every dish is a tribute to Las Vegas.</em>
+                   Crafted with passion and attention to detail, our dishes are designed to delight your senses.
+                   Whether you're here for the excitement of the casino or a memorable dining experience, we strive to make every visit exceptional.
+                </p>
+            </div> <!-- Close col-md-6 -->
+        </div> <!-- Close row -->
+        </div> <!-- Close container -->
+    </section>
+
+<!--Contact Section-->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="mb-4">Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                <div class="mt-4">
+                    <p>For reservations or inquiries, please reach out to us:</p>
+                    <p>Email: info@tangiersrestaurant.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div> <!-- Close contact info -->
+            </div> <!-- Close col-md-8 -->
+        </div> <!-- Close row -->
+    </div> <!-- Close container -->
+</section>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <div class="mb-2">
+            <a href="https://www.facebook.com/tangiersrestaurant" target="_blank" class="social-link me-3" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tangiersrestaurant" target="_blank" class="social-link me-3" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/tangiersrestaurant" target="_blank" class="social-link" aria-label="X"><i class="fa-brands fa-x"></i></a>
+        </div>
+        <p class="mb-0">&copy; 2026 Tangiers Restaurant. All rights reserved.</p>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div> <!-- Close container -->      
+</footer>
+</body>
+</html>
